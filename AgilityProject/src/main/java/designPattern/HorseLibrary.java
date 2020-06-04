@@ -39,22 +39,7 @@ public class HorseLibrary {
 	public void retireLivre(Livre livre) {
 		this.livres.remove(livre);
 	}
-	
-	
-	public static void main(String[] args) {
-		HorseLibrary l1 = new HorseLibrary ();
-		l1.getInstance();
-		
-		HorseLibrary l2 = new HorseLibrary ();
-		l2.getInstance();
-		
-		HorseLibrary l3 = new HorseLibrary ();
-		l3.getInstance();
-	}
-	
-	
-	
-	
-	
+
+
 
 }

@@ -2,6 +2,7 @@ package main;
 
 import Cheval.Cheval;
 import designPattern.Adaptateur;
+import designPattern.HorseLibrary;
 import gestionLivre.Livre;
 
 public class AppMain {
@@ -11,5 +12,14 @@ public class AppMain {
 		Adaptateur chevalAuteur = new Adaptateur(cheval);
 		chevalAuteur.addLivre(livre2);
 		chevalAuteur.saccagerLivres();
+		
+		HorseLibrary l1 = new HorseLibrary ();
+		l1.getInstance();
+		
+		HorseLibrary l2 = new HorseLibrary ();
+		l2.getInstance();
+		
+		HorseLibrary l3 = new HorseLibrary ();
+		l3.getInstance();
 	}
 }

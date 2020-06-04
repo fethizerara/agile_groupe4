@@ -1,4 +1,13 @@
-gestionLivre\LivreTest.class
-stepDefinitions\UserStory1step.class
+cheval\BoxTest.class
 gestionLivre\AuteurTest.class
 testRunners\TestRunner.class
+stepDefinitions\EmptyBoxStep.class
+cheval\ChevalTest.class
+stepDefinitions\IncreaseBoxCapacityStep.class
+stepDefinitions\PresenterLivreStep.class
+stepDefinitions\AjouterLivresAuteurStep.class
+gestionLivre\LivreTest.class
+stepDefinitions\AppScenariosStep.class
+stepDefinitions\PresenterAuteurStep.class
+stepDefinitions\PromotionLivreStep.class
+stepDefinitions\YoungestHorseStep.class

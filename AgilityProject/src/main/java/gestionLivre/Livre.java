@@ -1,5 +1,7 @@
 package gestionLivre;
 
+import Cheval.Cheval;
+
 /**
  * Décrivez votre classe Livre ici.
  *

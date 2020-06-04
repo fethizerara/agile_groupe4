@@ -1,4 +1,13 @@
-C:\Users\33652\Downloads\Cours 2019-2020\Méthodes Agiles d'Ingénierie Logicielle\Projet\Project_Agility\AgilityProject\src\test\java\stepDefinitions\UserStory1step.java
-C:\Users\33652\Downloads\Cours 2019-2020\Méthodes Agiles d'Ingénierie Logicielle\Projet\Project_Agility\AgilityProject\src\test\java\gestionLivre\LivreTest.java
-C:\Users\33652\Downloads\Cours 2019-2020\Méthodes Agiles d'Ingénierie Logicielle\Projet\Project_Agility\AgilityProject\src\test\java\testRunners\TestRunner.java
-C:\Users\33652\Downloads\Cours 2019-2020\Méthodes Agiles d'Ingénierie Logicielle\Projet\Project_Agility\AgilityProject\src\test\java\gestionLivre\AuteurTest.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\PromotionLivreStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\gestionLivre\AuteurTest.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\AjouterLivresAuteurStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\AppScenariosStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\testRunners\TestRunner.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\PresenterLivreStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\PresenterAuteurStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\cheval\BoxTest.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\gestionLivre\LivreTest.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\EmptyBoxStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\YoungestHorseStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\stepDefinitions\IncreaseBoxCapacityStep.java
+C:\Users\33652\git\agile_groupe4\AgilityProject\src\test\java\cheval\ChevalTest.java

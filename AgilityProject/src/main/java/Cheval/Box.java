@@ -64,8 +64,6 @@ public class Box {
                 c.setBox(this);
             }
         }
-        else
-            System.out.println("Impossible car la capacité est dépassée");
     }
 
 
@@ -90,7 +88,6 @@ public class Box {
 
         }
         return false;
-
     }
 
     @Override
@@ -136,26 +133,5 @@ public class Box {
         box.getChevaux().removeAll(box.getChevaux());
 
     }
-
-
-
-    //  @Given("^User wants to take the yougest hourse from the box$")
-    public void user_wants_to_take_the_yougest_hourse_from_the_box() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    // @When("^the box is filled$")
-    public void the_box_is_filled() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
-    //   @Then("^get the yougest hourse$")
-    public void get_the_yougest_hourse() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
-
 
 }

@@ -1,2 +1,10 @@
+designPattern\LivreFactory.class
+designPattern\LivreFactory1.class
+Cheval\Box.class
 gestionLivre\Livre.class
+main\AppMain.class
+agilite\Box.class
+Cheval\Cheval.class
+agilite\Main.class
 gestionLivre\Auteur.class
+agilite\Cheval.class

@@ -2,6 +2,8 @@ package gestionLivre;
 import java.util.ArrayList;
 import java.util.List;
 
+import designPattern.Adaptateur;
+
 /**
  * Décrivez votre classe Auteur ici.
  *

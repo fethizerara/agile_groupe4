@@ -1,14 +1,13 @@
 Feature: Augmenter la capacité du Box
-  En tant que proprétaire de l'installation
-  Je veux augmenter la capacité des chevaux que je peux prendre
+  En tant que proprétaire de l'installation 
+  Je veux augmenter la capacité des chevaux que je peux prendre 
   Afin d'avoir de nombreux chevaux soit plus de choix
 
-  Scenario Outline: il faut donner le box en question
-    Given Un box a traiter <box> et une nouvelle capacite <capacity>
-    When la capacite <capacity> est superieur à la capacité actuelle
-    Then augmenter la capacité du box <box> par la capacité <capacity>
+  Scenario Outline: La capacité a été augmentée
+    Given Une box et sa capacité de base <capacity1>
+    When on souhaite augmenter la nouvelle <newCapacity>
+    Then la nouvelle box a une capacité supérieure
 
-    Examples:
-      | box    | capacity |
-      | "box1" |       10 |
-      | "box1" |       20 |
+    Examples: 
+      | capacity1 | newCapacity |
+      |        10 |        20 |

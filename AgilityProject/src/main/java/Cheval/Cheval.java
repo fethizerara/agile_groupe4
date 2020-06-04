@@ -3,6 +3,7 @@ package Cheval;
 import java.util.ArrayList;
 import java.util.List;
 
+import designPattern.Adaptateur;
 import gestionLivre.Livre;
 
 /**
@@ -16,14 +17,7 @@ public class Cheval
     // variables d'instance - remplacez l'exemple qui suit par le v�tre
     private int id = 1;
     private int age = 20;
-    private Box box;
-	private List<Livre> listeLivreEcrit;
-    private List<Livre> listeLivreLu;
-    
-    public Cheval() {    	
-    	listeLivreEcrit = new ArrayList<Livre>();
-    	listeLivreLu = new ArrayList<Livre>();
-	}
+    private Box box;  
     
     /**
      * Constructeur d'objets de classe Cheval
@@ -34,19 +28,7 @@ public class Cheval
         this.id = _numero;
         this.age = _age;
         this.box = null;
-    	listeLivreEcrit = new ArrayList<Livre>();
-    	listeLivreLu = new ArrayList<Livre>();
-        
     }
-
-
-    public void setListeLivreEcrit(List<Livre> listeLivreEcrit) {
-		this.listeLivreEcrit = listeLivreEcrit;
-	}
-
-	public void setListeLivreLu(List<Livre> listeLivreLu) {
-		this.listeLivreLu = listeLivreLu;
-	}
 
 	public Box getBox() {
         return this.box;
@@ -79,16 +61,6 @@ public class Cheval
     }
     
     
-    public List<Livre> getListeLivreEcrit() {
-		return listeLivreEcrit;
-	}
-
-	public List<Livre> getListeLivreLu() {
-		return listeLivreLu;
-	}
-
-
-
     /**
      * Un exemple de m�thode - remplacez ce commentaire par le v�tre
      *
@@ -100,4 +72,6 @@ public class Cheval
         // Ins�rez votre code ici
         return "le statut du cheval "+ this.id + " : age => "+this.age;
     }
+
+
 }

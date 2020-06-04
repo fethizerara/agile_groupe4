@@ -1,27 +1,30 @@
 package stepDefinitions;
+import org.junit.Assert;
 
+import Cheval.Box;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+
+
+
 public class IncreaseBoxCapacityStep {
-    @Given("Un box a traiter {string} et une nouvelle capacite {int}")
-    public void un_box_a_traiter_et_une_nouvelle_capacite(String string, Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
+	Box box;
+	@Given("Une box et sa capacité de base {int}")
+	public void une_box_et_sa_nouvelle(int capacity) {
+	    box = new Box();
+	    box.setCapacity(capacity);
+	}
 
-    @When("la capacite {int} est superieur à la capacité actuelle")
-    public void la_capacite_est_superieur_à_la_capacité_actuelle(Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
+	@When("on souhaite augmenter la nouvelle {int}")
+	public void on_souhaite_augmenter_la_nouvelle_capacité(int newCapacity) {
+	    box.setCapacity(newCapacity);
+	}
 
-    @Then("augmenter la capacité du box {string} par la capacité {int}")
-    public void augmenter_la_capacité_du_box_par_la_capacité(String string, Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new cucumber.api.PendingException();
-    }
-
+	@Then("la nouvelle box a une capacité supérieure")
+	public void la_nouvelle_box_a_une() {
+	    Assert.assertEquals(20, box.getCapacity());
+	}
 
 }

@@ -1,7 +1,5 @@
 package cheval;
 
-
-
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
@@ -10,8 +8,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import agilite.Box;
-import agilite.Cheval;
+import Cheval.Box;
+import Cheval.Cheval;
 
 
 public class ChevalTest
@@ -36,7 +34,7 @@ public class ChevalTest
     {
         cheval1 = new Cheval(333, 8);
         ArrayList<Cheval> chevaux = new ArrayList<Cheval>();
-        chevaux.add(cheval1);				
+        chevaux.add(cheval1);
         box1 = new Box(chevaux, 2);
     }
 
@@ -61,8 +59,8 @@ public class ChevalTest
         assertEquals(333, cheval2.getId());
     }
 
-    
-    
+
+
     @Test
     public void testRemoveCheval()
     {
@@ -75,7 +73,7 @@ public class ChevalTest
 
     }
 
-    
+
     @Test
     public void testAddCheval()
     {
@@ -86,10 +84,10 @@ public class ChevalTest
         assertEquals(cheval1.getBox(), box1);
 
     }
-    
-    
-    
-    
+
+
+
+
     @Test
     public void testConstructorBox()
     {
@@ -101,9 +99,9 @@ public class ChevalTest
         assertEquals(box1.getNumero(),3);
 
     }
-     
-    
-    
+
+
+
     @Test
     public void testSetterCheval()
     {
@@ -116,65 +114,39 @@ public class ChevalTest
         box1.addCheval(cheval1);
         assertEquals(cheval1.getBox().getNumero(), 0);
 
-        
+
 
     }
-    
-    
-    
-    
-    
-    
-    
+
     @Test
     public void Test_the_box_is_not_empty()
     {
-      
+
         Box box1 = new Box ();
         assertEquals(Box.the_box_is_not_empty(box1), false);
-
-        
-
     }
-    
-    
+
     @Test
     public void Test_empty_the_box() {
-    	  Cheval cheval1 = new Cheval(323, 7);
-          ArrayList<Cheval> horses = new ArrayList<Cheval>();
-          horses.add(cheval1); 
-          Box box1 = new Box (horses,3);
-          assertEquals(Box.the_box_is_not_empty(box1), true);
-          Box.empty_the_box(box1);
-          assertEquals(Box.the_box_is_not_empty(box1), false);
-          assertEquals(cheval1.getBox(), null);
-          
+        Cheval cheval1 = new Cheval(323, 7);
+        ArrayList<Cheval> horses = new ArrayList<Cheval>();
+        horses.add(cheval1);
+        Box box1 = new Box (horses,3);
+        assertEquals(Box.the_box_is_not_empty(box1), true);
+        Box.empty_the_box(box1);
+        assertEquals(Box.the_box_is_not_empty(box1), false);
+        assertEquals(cheval1.getBox(), null);
+
     }
-    
-    
 
- 
-    
-    
-    
-   
-    
-    
-    
-    
-    
-    
-    
-    
- //   @Test
- //   public void testBoxAndCheval()
-  //  {
-  //      Cheval cheval1 = new Cheval(333, 8);
-   //     ArrayList<Cheval> chevaux = new ArrayList<Cheval>();
-   //     chevaux.add(cheval1);
-   //     Box box1 = new Box (chevaux,2);
-   //     assertEquals("le box numero : 2 Contient le cheval numero : 333 et son age est 8", box1.boxResumeCheval(0));
-   // }
+    //   @Test
+    //   public void testBoxAndCheval()
+    //  {
+    //      Cheval cheval1 = new Cheval(333, 8);
+    //     ArrayList<Cheval> chevaux = new ArrayList<Cheval>();
+    //     chevaux.add(cheval1);
+    //     Box box1 = new Box (chevaux,2);
+    //     assertEquals("le box numero : 2 Contient le cheval numero : 333 et son age est 8", box1.boxResumeCheval(0));
+    // }
 }
-
 

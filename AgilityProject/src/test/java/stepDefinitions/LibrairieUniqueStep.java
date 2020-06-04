@@ -7,7 +7,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import designPattern.HorseLibrary;
 
-public class fromBoxToLibraryStep {
+public class LibrairieUniqueStep {
 	HorseLibrary horseLibrary;
 	String msgErreur = "";
 	

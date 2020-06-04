@@ -1,7 +1,7 @@
-Feature: mettre les chevaux du box dans la bibliothèque
-  En tant que Responsable de Box
-  Je vais mettre mes chevaux dans la bibiothèque
-  Car je veux augmenter leur vitesse
+Feature: Une personne essaie de créer une deuxième librairie de chevaux
+  En tant que Personne
+  Je vais créer une deuxième librairie
+  Car je veux vérifier qu'il existe qu'une seule librairie de chevaux
 
   Scenario Outline: 
     Given une HorseLibrary

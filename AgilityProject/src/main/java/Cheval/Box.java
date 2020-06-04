@@ -14,6 +14,7 @@ public class Box {
     // variables d'instance - remplacez l'exemple qui suit par le v�tre
     private ArrayList<Cheval> chevaux;
     private int numero;
+    private int capacity;
 
 
     /**
@@ -23,12 +24,14 @@ public class Box {
         // initialisation des variables d'instance
         this.chevaux = new ArrayList<Cheval>();
         this.numero = 0;
+        capacity=10;
     }
 
     public Box(ArrayList<Cheval> _chevaux, int _numero) {
         // initialisation des variables d'instance
         this.chevaux = _chevaux;
         this.numero = _numero;
+        capacity=10;
     }
 
 
@@ -41,6 +44,13 @@ public class Box {
     }
 
 
+    public void setCapacity(int cap) {
+        this.capacity = cap;
+    }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
     public ArrayList<Cheval> getChevaux() {
         return this.chevaux;
     }
@@ -48,22 +58,17 @@ public class Box {
     // Ajouter un cheval au Box en mettant a jour l'information du cheval
 
     public void addCheval(Cheval c) {
-        this.chevaux.add(c);
-        if (c.getBox() == null) {
-            c.setBox(this);
+        if(getChevaux().size()<this.capacity) {
+            this.chevaux.add(c);
+            if (c.getBox() == null) {
+                c.setBox(this);
+            }
         }
+        else
+            System.out.println("Impossible car la capacité est dépassée");
     }
 
-    // supprimer un cheval du Box en mettant a jour l'information du cheval
 
-    // public boolean removeCheval(Cheval c){
-    //	 if(c.getBox().equals(this)) {
-    //		 c.setBox(null);
-    //		 chevaux.remove(c);
-    //		 return true;
-    //	 }
-    //	 return false;
-    //  }
 
 
     public boolean removeCheval(Cheval c) {
@@ -107,38 +112,50 @@ public class Box {
             return " l'index en argument d�passe le size du box ou le cheval n'apartient pas au box";
     }
 
-    public static void user_wants_to_empty_the_box(Box box) {
-        if (the_box_is_not_empty(box)) {
+
+    // @Given("^User wants to empty the box$")
+    public static void  user_wants_to_empty_the_box(Box box) {
+        if(the_box_is_not_empty(box)) {
             empty_the_box(box);
             System.out.println("The box has been cleared");
-        } else
+        }
+        else
             System.out.println("The box is already empty");
     }
 
-    public static boolean the_box_is_not_empty(Box box) {
-        return box.getChevaux().size() > 0;
+    //@When("^The box is not empty$")
+    public static boolean the_box_is_not_empty(Box box)  {
+        return box.getChevaux().size()>0;
     }
 
-    public static void empty_the_box(Box box) {
-        for (int i = 0; i < box.getChevaux().size(); i++) {
+    // @Then("^Empty the box$")
+    public static void empty_the_box(Box box)  {
+        for(int i=0;i<box.getChevaux().size();i++) {
             box.getChevaux().get(i).setBox(null);
         }
         box.getChevaux().removeAll(box.getChevaux());
 
     }
 
+
+
+    //  @Given("^User wants to take the yougest hourse from the box$")
     public void user_wants_to_take_the_yougest_hourse_from_the_box() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
+    // @When("^the box is filled$")
     public void the_box_is_filled() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
 
+    //   @Then("^get the yougest hourse$")
     public void get_the_yougest_hourse() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         throw new PendingException();
     }
+
+
 }

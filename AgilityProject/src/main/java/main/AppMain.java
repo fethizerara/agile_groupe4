@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Cheval.Cheval;
+import designPattern.Adaptateur;
 import designPattern.LivreFactory;
 import designPattern.LivreFactory1;
+import gestionLivre.Auteur;
 import gestionLivre.Livre;
 
 public class AppMain {
@@ -27,6 +29,11 @@ public class AppMain {
 			System.out.println(liv.getPrix());
 		}
 		
+		Livre livre2 = new Livre("Mon premier titre", 50);
+		Cheval cheval = new Cheval (5, 18);
+		Adaptateur chevalAuteur = new Adaptateur(cheval);
+		chevalAuteur.addLivre(livre2);
+		chevalAuteur.saccagerLivres();
 		
 
 	}

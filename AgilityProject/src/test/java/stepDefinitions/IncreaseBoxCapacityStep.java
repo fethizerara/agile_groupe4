@@ -10,6 +10,11 @@ import cucumber.api.java.en.When;
 
 
 public class IncreaseBoxCapacityStep {
+	
+	public IncreaseBoxCapacityStep(Box box) {
+		this.box=box;
+	}
+	
 	Box box;
 	@Given("Une box et sa capacité de base {int}")
 	public void une_box_et_sa_nouvelle(int capacity) {
